@@ -1,0 +1,195 @@
+{
+  "wika-ppf-headquarters": {
+    "w": 1080,
+    "h": 810,
+    "widths": [
+      640,
+      1080
+    ],
+    "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBQCdASoYABIAPu1qqU8ppiOiMBgIATAdiWgAuyAPwKAThxHviKGr6cPLtMqmLZ7MAP2H37+05CjN2TcFeXe0rjAQ+m9qAr+5fltl7z4wWI7RYgO6EY1kyoFIsFw1iHmokYTxJQ4Y87SBmudsl+4Z/IAn0vbZUYo4u3JdqyLwAAAA"
+  },
+  "ppf-cleanroom-packing": {
+    "w": 2528,
+    "h": 1696,
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoYABAAPu1kq04ppaQiMAgBMB2JYwCw7B6Vc+6EQD+LHthXMAD+xeXR7IL+PvjwNczZW6+BY776n59QhH/HpSwIzfHQ0pbm9aYOU+GHvJJSWk8A9MP2AA=="
+  },
+  "ppf-rnd-laboratory": {
+    "w": 2528,
+    "h": 1696,
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAwCdASoYABAAPu1iqk2ppaQiMAgBMB2JYwAAUWmEdHxU84la4AD8grrqrAMaeMEzLPE3CzH4RKyN0hH+nslW1ZXZ3X8tSiLixrIMIl5ISPm09G92peYAAAA="
+  },
+  "ppf-quality-control-lab": {
+    "w": 2528,
+    "h": 1696,
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoYABAAPu1qrU8ppiQiMAgBMB2JQBOgA9DQd12FUflHAAD+WV/kRM5RZNsckBBLpaG9tMohVK4M8cgs7CKMx2lz7D9iXRcJxDhXvZPzOkzltX6s78AAAA=="
+  },
+  "ppf-slitting-rewinding-line": {
+    "w": 2528,
+    "h": 1696,
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoYABAAPu1yrU+pp6QiMAgBMB2JQBOgDMjfRb/y+C7a9in+AAD6nYgwoB69tqedF9E1et6aqg4OLm0cRfsNeT7kKLl77vRQZWa9JPX6OELCtUjkrhW76DAA"
+  },
+  "ppf-coating-production-line": {
+    "w": 2528,
+    "h": 1696,
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoYABAAPu1yrU+pp6QiMAgBMB2JYwCdAB5T+LnFxCu3eqAAzdHf9JxY9xAuKcDxxdAm1pkT3fIR+vS1cXvVBWGNWaUE0TUQCZjpvejSmSAdYHAA"
+  },
+  "tpu-film-production": {
+    "w": 2528,
+    "h": 1696,
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoYABAAPu1krU6ppaSiMAgBMB2JZQC7ABeUiFa+MfgqmEAA/duxurdU20LNJp/XPw+ohzJ/KZEgq/Ivi1bTtNAwP1KydFTvw4Tfujr8sg++yEIEQAA="
+  },
+  "ppf-warehouse-logistics": {
+    "w": 2528,
+    "h": 1696,
+    "widths": [
+      640,
+      1280,
+      1920
+    ],
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoYABAAPu1mq04ppaQiMAgBMB2JZQCw7BSRrMYeF/8zBbagAM01FdXr+KD43hD6vMTLJ3yFid1jfQ6Iekfmwx/Ss6CwZXtS9GfIAncCAAA="
+  },
+  "white-sports-car-front-ppf": {
+    "w": 2000,
+    "h": 2500,
+    "widths": [
+      640,
+      1100,
+      1600
+    ],
+    "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACQBQCdASoYAB4APu1urVCppqQiqAqpMB2JaQDOe2uQIrkenKtQCwEJjpNDtA9RBfHckk2PgAD33MxV1EXnJUNr2sP4fiWW234l51rh8FZ9nc2KsfwWiRO+mVktflJ/wYymRmKkd7VWnTpFi630ANP4AAA="
+  },
+  "gloss-yellow-car-bodywork": {
+    "w": 2000,
+    "h": 2000,
+    "widths": [
+      640,
+      1100
+    ],
+    "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACQBQCdASoYABgAPt1ipk2opiOiN/qoARAbiWwAuzMcfAgd2T1t/Gy5Zj4iCrQTYI8VG6gtoAD+9o5vwKIrAlK/z4A7wYz9jiAzat7rMWmV5Fh3mkh0p8nnqxoBX1+pppJpkVS5iP+/kY0h0IVpuC7Cc91/KzYu9ud1Y7oRA2ta/p3C5QqQ5jHpCibOKEAA"
+  },
+  "matte-grey-supercar": {
+    "w": 2000,
+    "h": 1500,
+    "widths": [
+      640,
+      1100,
+      1600
+    ],
+    "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAwCdASoYABIAPu1srVCppiQiqAqpMB2JZwAAH0Vlt0X7+3Gyph5AAPnoyi55mblz3r66ne9eZ30SHCc0mnY6IzzEjsAA"
+  },
+  "red-sports-car-front": {
+    "w": 2000,
+    "h": 1421,
+    "widths": [
+      640,
+      1100,
+      1600
+    ],
+    "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADwBACdASoYABEAPu1kqU2ppaOiMAgBMB2JZAC7MoADToQJDwUusNkP0TdMmroiW0AA/uFt+XNFyHrGh1uy7dkxEzaCjeG1RQBn4bho+dr2+w4KVOR5L+K02MuLWGdDxO3/I641Htqfn3NjlhIKMZN3bm3vAAAA"
+  },
+  "white-car-side-gloss": {
+    "w": 2000,
+    "h": 1333,
+    "widths": [
+      640,
+      1100,
+      1600
+    ],
+    "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABQAwCdASoYABAALrV2u12jqampiYC0SzgABVRLteo6/K7QiAD+2V3/0XaZyEj+K99nQGxFbr6mblMz3l19UUto1AAAAA=="
+  },
+  "black-car-front-quarter": {
+    "w": 2000,
+    "h": 2000,
+    "widths": [
+      640,
+      1100
+    ],
+    "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwBACdASoYABgAPuFep02opSOiMAwBEBwJZwDM0CHfx7gY8EofHx/zCAAA/uvbBMlIDxebodlvvSm3/HaBo7EiMyt0AAAA"
+  },
+  "wika-ppf-packaging-design": {
+    "w": 1600,
+    "h": 406,
+    "widths": [
+      800,
+      1600
+    ],
+    "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQAwCdASoYAAYAPu1orU6ppiSiMAgBMB2JYwABFSFXbpCesNoAAP7eOjHHlblpy2lZ0N7dvI4IXSOP4errZU9iIFIpF8di4y4o1R0ZRE4xbgAA"
+  },
+  "ppf-unwinding-station": {
+    "w": 1075,
+    "h": 600,
+    "widths": [
+      640,
+      1075
+    ],
+    "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoYAA0APu1iqU2ppaQiMAgBMB2JYgCdMoAC+0ga8oXC4D+BMAD+2nJdEGm2E0Wfy3RQQTpygWB2fNAZhrl+gUWboTJ6lt2vfWLDKx2i2XwY0AAA"
+  },
+  "ppf-cleanroom-coating-hall": {
+    "w": 1080,
+    "h": 690,
+    "widths": [
+      640,
+      1080
+    ],
+    "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAABwAwCdASoYAA8APu1kqU2ppaQiMAgBMB2JaQAAN0Mx+jZl32QA/oE06Wk9fxAncMOdtFk0A/6E0YSll3tYdCsJSyCgAA=="
+  },
+  "ppf-precision-coating-head": {
+    "w": 1080,
+    "h": 713,
+    "widths": [
+      640,
+      1080
+    ],
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoYABAAPu1Ct1apoqakGAEwHYlAF8kDPuJCJxxxjTx5gAC551HbhhlLJksf9twiLrJVECbdi1/8x3KdMBAQTeg2ugeLtHVUzfPgpi+QAAA="
+  },
+  "compare-unprotected": {
+    "w": 1460,
+    "h": 1035,
+    "widths": [
+      640,
+      1000,
+      1460
+    ],
+    "lqip": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAwCdASoYABEAPuVgpU2pJaOiMAwBIByJaQAAT5JD1Y3q4lhaAAD9HMMnuVT9mb9gTmKQ98kFOuZ9C9BMu0SKqvwR8C9qRCQ0SkxEuEAAAA=="
+  },
+  "compare-protected": {
+    "w": 1460,
+    "h": 1035,
+    "widths": [
+      640,
+      1000,
+      1460
+    ],
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABwBACdASoYABEAPuFgqE2opaQiMAwBEBwJaQDPZB4+IFR+zFeG7Z8QBD33AAD9Oqrx4OWNuDUpOqqQtJYbyM7imvPBPvjyQIZZDBwbpnttftERPAA="
+  }
+}

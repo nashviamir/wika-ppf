@@ -1,0 +1,25 @@
+# WIKA PPF
+
+> WIKA PPF (also "Wika Germany") is a premium automotive paint protection film (PPF) brand. It produces self-healing transparent TPU, matte TPU and PCU paint protection films built on German raw materials, with warranty coverage of up to 10 years on select grades. WIKA PPF supplies professional installers, detailing centers, car dealers and distributors.
+
+Note: WIKA PPF is an automotive film brand and is not related to WIKA Alexander Wiegand (measurement instruments).
+
+## Products
+- [Transparent TPU PPF — WIKA Clear Gloss](products/transparent-tpu-ppf/): self-healing, anti-yellowing, hydrophobic clear paint protection film
+- [Matte TPU PPF — WIKA Satin Matte](products/matte-tpu-ppf/): satin finish PPF for matte paint and stealth looks
+- [PCU PPF — WIKA PCU Pro](products/pcu-ppf/): high stone-chip and impact resistance for performance vehicles
+
+## Company
+- [Technology](technology/): film layers, self-healing top coat, German adhesive
+- [Manufacturing](manufacturing/): production process and 7 quality checkpoints
+- [Partners](partners/): wholesale, distribution and installer partnerships
+- [Warranty & Care](warranty/)
+- [About](about/)
+- [Contact](contact/)
+
+## Guides
+- [What is paint protection film?](guides/what-is-paint-protection-film/)
+- [TPU vs PCU vs PVC PPF](guides/tpu-vs-pcu-vs-pvc-ppf/)
+- [PPF vs ceramic coating](guides/ppf-vs-ceramic-coating/)
+- [PPF care & maintenance](guides/ppf-care-and-maintenance/)
+- [FAQ](faq/)
