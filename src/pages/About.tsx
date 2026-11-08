@@ -2,6 +2,7 @@ import type { CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Img from '../components/Img';
+import CeoMessage from '../components/CeoMessage';
 import { Counter, CtaBand, PageHero, SectionHead } from '../components/ui';
 import { stats } from '../data/content';
 import { site } from '../config/site';
@@ -65,6 +66,12 @@ export default function About() {
       </section>
 
       <section className="section bg-white">
+        <div className="container">
+          <CeoMessage />
+        </div>
+      </section>
+
+      <section className="section">
         <div className="container grid-2">
           <article className="vm-card" data-reveal>
             <span className="eyebrow">Our vision</span>
@@ -83,7 +90,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section bg-white">
         <div className="container">
           <SectionHead center eyebrow="Our values" title="What drives us." />
           <div className="values">

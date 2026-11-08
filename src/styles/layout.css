@@ -426,3 +426,28 @@
   opacity: 0.3;
 }
 
+
+/* Footer contact block */
+.footer-contact {
+  font-style: normal;
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+  font-size: 0.93rem;
+  color: var(--ink-2);
+}
+.footer-contact a,
+.footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+}
+.footer-contact a:hover {
+  color: var(--blue);
+}
+.footer-contact svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--blue);
+}

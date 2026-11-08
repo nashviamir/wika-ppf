@@ -60,9 +60,9 @@ export const products: Product[] = [
       ['Warranty', 'Up to 10 years*'],
     ],
     keywords: ['transparent TPU PPF', 'clear paint protection film', 'clear bra', 'gloss PPF', 'self-healing PPF'],
-    metaTitle: 'Transparent TPU Paint Protection Film (Clear Gloss PPF)',
+    metaTitle: 'Clear TPU Paint Protection Film — Clear Gloss PPF',
     metaDescription:
-      'WIKA Clear Gloss transparent TPU PPF: self-healing, anti-yellowing, hydrophobic clear paint protection film with up to 10-year warranty. For installers & distributors.',
+      'WIKA Clear Gloss: self-healing, anti-yellowing, hydrophobic transparent TPU paint protection film with up to 10-year warranty. For installers & distributors.',
   },
   {
     slug: 'matte-tpu-ppf',
@@ -96,7 +96,7 @@ export const products: Product[] = [
     keywords: ['matte PPF', 'matte paint protection film', 'satin PPF', 'stealth PPF', 'matte TPU film'],
     metaTitle: 'Matte TPU Paint Protection Film (Satin & Stealth PPF)',
     metaDescription:
-      'WIKA Satin Matte PPF: matte TPU paint protection film for a stealth satin look and protection of factory matte paint. Self-healing, UV stable, up to 10-year warranty.',
+      'WIKA Satin Matte: matte TPU paint protection film for a stealth satin look and for protecting factory matte paint. Self-healing, UV stable, 10-year warranty.',
   },
   {
     slug: 'pcu-ppf',
@@ -130,7 +130,7 @@ export const products: Product[] = [
     keywords: ['PCU PPF', 'PCU paint protection film', 'stone chip protection film', 'track PPF', 'high impact PPF'],
     metaTitle: 'PCU Paint Protection Film — High-Impact PPF',
     metaDescription:
-      'WIKA PCU Pro paint protection film: high stone-chip and impact resistance for bumpers, leading edges and performance vehicles. Available for distributors & installers.',
+      'WIKA PCU Pro paint protection film: maximum stone-chip and impact resistance for bumpers, leading edges and performance cars. For distributors & installers.',
   },
 ];
 

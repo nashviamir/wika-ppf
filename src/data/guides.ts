@@ -110,7 +110,7 @@ export const guides: Guide[] = [
   {
     slug: 'ppf-vs-ceramic-coating',
     title: 'PPF vs Ceramic Coating: Differences, Pros & Cons',
-    metaTitle: 'PPF vs Ceramic Coating — Which Protects Your Car Better?',
+    metaTitle: 'PPF vs Ceramic Coating — Which Is Better for Your Car?',
     description:
       'Paint protection film vs ceramic coating: how they differ in protection, appearance, lifespan and cost — and why many owners combine both.',
     excerpt: 'Two popular ways to protect paint — what each one does, and why the best answer is often both.',
@@ -141,7 +141,7 @@ export const guides: Guide[] = [
   {
     slug: 'ppf-care-and-maintenance',
     title: 'How to Care for Paint Protection Film: Washing & Maintenance',
-    metaTitle: 'PPF Care & Maintenance Guide — How to Wash a Car with PPF',
+    metaTitle: 'PPF Care Guide — How to Wash a Car with PPF',
     description:
       'Keep your paint protection film looking new: curing time, safe washing, pressure-washer distance, self-healing tips and what products to avoid.',
     excerpt: 'Curing, washing, self-healing and the products to avoid — keep your film looking brand new.',

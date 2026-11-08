@@ -17,6 +17,7 @@ const W = [640, 1280, 1920];
 
 const media = [
   { file: 'company front.jpeg', slug: 'wika-ppf-headquarters', widths: [640, 1080] },
+  { file: 'ceo.jpeg', slug: 'wika-ppf-ceo', widths: [640, 1080] },
   { file: 'Gemini_Generated_Image_a03ojya03ojya03o.jpg', slug: 'ppf-cleanroom-packing', widths: W },
   { file: 'Gemini_Generated_Image_ay59hsay59hsay59.jpg', slug: 'ppf-rnd-laboratory', widths: W },
   { file: 'Gemini_Generated_Image_c13ogoc13ogoc13o.jpg', slug: 'ppf-quality-control-lab', widths: W },
@@ -66,29 +67,6 @@ for (const m of media) {
   };
   console.log('✓', m.slug, widths.join(','));
 }
-
-// Social share image (1200x630) built from the headquarters photo + brand overlay
-const og = await sharp(path.join(src, 'company front.jpeg'))
-  .resize(1200, 630, { fit: 'cover', position: 'centre' })
-  .composite([
-    {
-      input: Buffer.from(`<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
-        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#ffffff" stop-opacity=".96"/>
-          <stop offset=".55" stop-color="#ffffff" stop-opacity=".82"/>
-          <stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient></defs>
-        <rect width="1200" height="630" fill="url(#g)"/>
-        <rect x="64" y="64" width="8" height="120" rx="4" fill="#E8202E"/>
-        <text x="96" y="140" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-style="italic" font-size="88" fill="#1438D6">WIKA PPF</text>
-        <text x="98" y="182" font-family="Arial, sans-serif" font-weight="700" font-size="22" letter-spacing="6" fill="#0A1330">PREMIUM PAINT PROTECTION FILM</text>
-        <text x="96" y="420" font-family="Arial, sans-serif" font-weight="700" font-size="44" fill="#0A1330">Invisible armor</text>
-        <text x="96" y="474" font-family="Arial, sans-serif" font-weight="700" font-size="44" fill="#0A1330">for every finish.</text>
-        <text x="98" y="540" font-family="Arial, sans-serif" font-size="22" fill="#33405F">TPU · Matte · PCU  —  Self-healing · UV-stable · 10-year warranty</text>
-      </svg>`),
-    },
-  ])
-  .jpeg({ quality: 84 })
-  .toFile(path.join(root, 'public', 'og-image.jpg'));
 
 fs.writeFileSync(path.join(root, 'src', 'data', 'media.json'), JSON.stringify(manifest, null, 2));
 console.log('manifest written');

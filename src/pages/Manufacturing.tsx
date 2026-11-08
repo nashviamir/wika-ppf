@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import { Check, Play } from 'lucide-react';
+import { Check, Factory } from 'lucide-react';
 import ProcessRail from '../components/ProcessRail';
 import Img from '../components/Img';
 import { CtaBand, PageHero, SectionHead } from '../components/ui';
@@ -31,7 +31,7 @@ export default function Manufacturing() {
             ) : null}
             <figcaption>
               <span className="chip">
-                <Play size={14} /> WIKA PPF production line
+                <Factory size={14} /> WIKA PPF production line
               </span>
             </figcaption>
           </figure>

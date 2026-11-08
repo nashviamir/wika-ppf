@@ -12,7 +12,7 @@ const dist = path.join(root, 'dist');
 const ssrDir = path.join(root, 'dist-ssr');
 
 const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf-8');
-const { render, allPages, headHtml, notFoundMeta } = await import(
+const { render, allPages, headHtml, notFoundMeta, pageImages } = await import(
   pathToFileURL(path.join(ssrDir, 'entry-server.js')).href
 );
 
@@ -40,8 +40,9 @@ fs.writeFileSync(path.join(dist, '404.html'), page(notFoundMeta, '/404/'));
 // sitemap.xml
 const today = new Date().toISOString().slice(0, 10);
 const priority = (p) => (p === '/' ? '1.0' : p.split('/').filter(Boolean).length === 1 ? '0.8' : '0.7');
+const xmlEsc = (t) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${allPages
   .filter((m) => !m.noindex)
   .map(
@@ -50,6 +51,11 @@ ${allPages
     <lastmod>${today}</lastmod>
     <changefreq>${m.path === '/' ? 'weekly' : 'monthly'}</changefreq>
     <priority>${priority(m.path)}</priority>
+${pageImages(m)
+  .map((img) => `    <image:image>
+      <image:loc>${xmlEsc(img.url)}</image:loc>
+    </image:image>`)
+  .join('\n')}
   </url>`,
   )
   .join('\n')}

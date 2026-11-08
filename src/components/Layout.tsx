@@ -1,13 +1,12 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { ArrowRight, ArrowUpRight, Mail, Phone } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Clock, MapPin, Phone } from 'lucide-react';
 import Logo from './Logo';
-import { InstagramIcon, LinkedinIcon, YoutubeIcon, WhatsappIcon } from './Icon';
-import { asset, nav, site } from '../config/site';
+import { asset, mapsHref, nav, site } from '../config/site';
 import { products } from '../data/content';
 import { guides } from '../data/guides';
 import { useReveal } from '../hooks/useReveal';
-import { getMeta, fullTitle, abs } from '../seo/meta';
+import { getMeta, fullTitle, abs, ogUrl } from '../seo/meta';
 
 const useIsoLayoutEffect = typeof window === 'undefined' ? useEffect : useLayoutEffect;
 
@@ -25,6 +24,10 @@ function useHeadSync(pathname: string) {
     set('meta[property="og:description"]', 'content', m.description);
     set('meta[property="og:url"]', 'content', abs(m.path));
     set('link[rel="canonical"]', 'href', abs(m.path));
+    set('meta[property="og:image"]', 'content', ogUrl(m));
+    set('meta[name="twitter:title"]', 'content', fullTitle(m));
+    set('meta[name="twitter:description"]', 'content', m.description);
+    set('meta[name="twitter:image"]', 'content', ogUrl(m));
   }, [pathname]);
 }
 
@@ -113,8 +116,10 @@ function Header() {
             Become a partner <ArrowRight className="arrow" />
           </Link>
           <div className="mm-contacts">
-            <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
-            <a href={`tel:${site.contact.phone.replace(/\s/g, '')}`}>{site.contact.phone}</a>
+            <a href={site.contact.phoneHref}>{site.contact.phone}</a>
+            <span>
+              {site.contact.address.city}, {site.contact.address.country}
+            </span>
           </div>
         </div>
       </div>
@@ -137,25 +142,24 @@ function Footer() {
               Premium paint protection film — transparent TPU, matte TPU and PCU — engineered with German raw
               materials. {site.tagline}
             </p>
-            <div className="socials">
-              <a href={site.social.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                <InstagramIcon />
+            <address className="footer-contact">
+              <a href={mapsHref} target="_blank" rel="noopener noreferrer">
+                <MapPin size={16} aria-hidden="true" />
+                <span>
+                  {site.contact.address.street}
+                  <br />
+                  {site.contact.address.postalCode} {site.contact.address.city}, {site.contact.address.country}
+                </span>
               </a>
-              <a href={site.social.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <LinkedinIcon />
+              <a href={site.contact.phoneHref}>
+                <Phone size={16} aria-hidden="true" />
+                <span>{site.contact.phone}</span>
               </a>
-              <a href={site.social.youtube} aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-                <YoutubeIcon />
-              </a>
-              <a
-                href={`https://wa.me/${site.contact.whatsapp}`}
-                aria-label="WhatsApp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <WhatsappIcon />
-              </a>
-            </div>
+              <p>
+                <Clock size={16} aria-hidden="true" />
+                <span>{site.contact.hours}</span>
+              </p>
+            </address>
           </div>
           <div>
             <h2>Products</h2>
@@ -201,18 +205,6 @@ function Footer() {
                   <Link to={`/guides/${g.slug}/`}>{g.title.split(':')[0].replace('The Complete Guide', '').trim()}</Link>
                 </li>
               ))}
-            </ul>
-            <ul style={{ marginTop: 18 }}>
-              <li>
-                <a href={`mailto:${site.contact.email}`} style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
-                  <Mail size={15} /> {site.contact.email}
-                </a>
-              </li>
-              <li>
-                <a href={`tel:${site.contact.phone.replace(/\s/g, '')}`} style={{ display: 'inline-flex', gap: 8, alignItems: 'center' }}>
-                  <Phone size={15} /> {site.contact.phone}
-                </a>
-              </li>
             </ul>
           </div>
         </div>

@@ -1,8 +1,7 @@
 import { useEffect, useId, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronRight, Plus } from 'lucide-react';
+import { ArrowRight, ChevronRight, Phone, Plus } from 'lucide-react';
 import { site } from '../config/site';
-import { WhatsappIcon } from './Icon';
 
 /* ─────────── Ambient background (static, cheap to paint) ─────────── */
 export function Ambient({ grid = true }: { grid?: boolean }) {
@@ -195,7 +194,7 @@ export function Counter({ to, suffix = '', duration = 1600 }: { to: number; suff
 /* ─────────── CTA band ─────────── */
 export function CtaBand({
   title = 'Ready to protect what drives your business?',
-  text = 'Request samples, technical data sheets or wholesale pricing. Our team usually replies within one business day.',
+  text = 'Request samples, technical data sheets or wholesale pricing. Call our team in Frankfurt, Monday to Friday.',
 }: {
   title?: ReactNode;
   text?: ReactNode;
@@ -214,13 +213,8 @@ export function CtaBand({
             <Link to="/contact/" className="btn btn-white">
               Get in touch <ArrowRight className="arrow" />
             </Link>
-            <a
-              href={`https://wa.me/${site.contact.whatsapp}`}
-              className="btn btn-outline-light"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <WhatsappIcon /> WhatsApp
+            <a href={site.contact.phoneHref} className="btn btn-outline-light">
+              <Phone /> {site.contact.phone}
             </a>
           </div>
         </div>

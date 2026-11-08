@@ -27,7 +27,7 @@ export default function Partners() {
         }
       >
         <div className="btn-row" style={{ marginTop: 32 }}>
-          <Link to="/contact/?topic=distribution" className="btn btn-primary">
+          <Link to="/contact/" className="btn btn-primary">
             Apply to partner <ArrowRight className="arrow" />
           </Link>
         </div>

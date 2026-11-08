@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight, Check } from 'lucide-react';
 import CompareSlider from '../components/CompareSlider';
 import LayerStack from '../components/LayerStack';
 import Img from '../components/Img';
+import CeoMessage from '../components/CeoMessage';
 import Icon from '../components/Icon';
 import { Ambient, Counter, CtaBand, Faq, Marquee, SectionHead } from '../components/ui';
 import { benefits, faqs, marqueeWords, partnerTypes, products, stats } from '../data/content';
@@ -324,6 +325,13 @@ export default function Home() {
             </Link>
           </div>
           <Faq items={faqs.slice(0, 5)} />
+        </div>
+      </section>
+
+      {/* ───────── CEO ───────── */}
+      <section className="section">
+        <div className="container">
+          <CeoMessage compact />
         </div>
       </section>
 
