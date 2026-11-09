@@ -47,16 +47,6 @@
     ],
     "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoYABAAPu1qrU8ppiQiMAgBMB2JQBOgA9DQd12FUflHAAD+WV/kRM5RZNsckBBLpaG9tMohVK4M8cgs7CKMx2lz7D9iXRcJxDhXvZPzOkzltX6s78AAAA=="
   },
-  "ppf-slitting-rewinding-line": {
-    "w": 2528,
-    "h": 1696,
-    "widths": [
-      640,
-      1280,
-      1920
-    ],
-    "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoYABAAPu1yrU+pp6QiMAgBMB2JQBOgDMjfRb/y+C7a9in+AAD6nYgwoB69tqedF9E1et6aqg4OLm0cRfsNeT7kKLl77vRQZWa9JPX6OELCtUjkrhW76DAA"
-  },
   "ppf-coating-production-line": {
     "w": 2528,
     "h": 1696,
@@ -76,16 +66,6 @@
       1920
     ],
     "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoYABAAPu1krU6ppaSiMAgBMB2JZQC7ABeUiFa+MfgqmEAA/duxurdU20LNJp/XPw+ohzJ/KZEgq/Ivi1bTtNAwP1KydFTvw4Tfujr8sg++yEIEQAA="
-  },
-  "ppf-warehouse-logistics": {
-    "w": 2528,
-    "h": 1696,
-    "widths": [
-      640,
-      1280,
-      1920
-    ],
-    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoYABAAPu1mq04ppaQiMAgBMB2JZQCw7BSRrMYeF/8zBbagAM01FdXr+KD43hD6vMTLJ3yFid1jfQ6Iekfmwx/Ss6CwZXtS9GfIAncCAAA="
   },
   "white-sports-car-front-ppf": {
     "w": 2000,

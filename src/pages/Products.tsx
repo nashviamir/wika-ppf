@@ -5,6 +5,8 @@ import Img from '../components/Img';
 import Icon from '../components/Icon';
 import { CtaBand, PageHero, SectionHead } from '../components/ui';
 import { filmFeatures, products } from '../data/content';
+import { datasheetFor } from '../data/datasheets';
+import { DataSheetTable } from '../components/DataSheet';
 import NotFound from './NotFound';
 
 const d = (ms: number) => ({ '--d': `${ms}ms` }) as CSSProperties;
@@ -12,12 +14,12 @@ const d = (ms: number) => ({ '--d': `${ms}ms` }) as CSSProperties;
 const compareRows: [string, string, string, string][] = [
   ['Finish', 'High gloss', 'Satin / matte', 'Gloss'],
   ['Base material', 'Aliphatic TPU', 'Aliphatic TPU', 'Paint protection urethane'],
-  ['Self-healing top coat', '●', '●', 'Grade dependent'],
+  ['Self-healing top coat', '●', '●', '●'],
   ['Anti-yellowing / UV stable', '●', '●', '●'],
   ['Hydrophobic & stain resistant', '●', '●', '●'],
   ['Stone-chip resistance', 'High', 'High', 'Maximum'],
   ['Best for', 'Full body & daily drivers', 'Matte paint & stealth looks', 'High-impact & performance'],
-  ['Warranty', 'Up to 10 years*', 'Up to 10 years*', 'Grade dependent*'],
+  ['Warranty', 'Up to 10 years*', 'Up to 10 years*', '5 – 7 years*'],
 ];
 
 export default function Products() {
@@ -141,6 +143,7 @@ export function ProductDetail() {
   const { slug } = useParams();
   const p = products.find((x) => x.slug === slug);
   if (!p) return <NotFound />;
+  const sheet = datasheetFor(p.slug);
   const others = products.filter((x) => x.slug !== p.slug);
 
   return (
@@ -215,9 +218,12 @@ export function ProductDetail() {
             ))}
           </div>
           <p className="footnote">
-            Values are typical and may vary by grade. Final specifications are confirmed in the technical data sheet for each SKU. *Warranty
-            terms vary by product grade and region.
+            {sheet
+              ? 'Key values from the technical data sheet below. Actual data per batch is given in the COA test report.'
+              : 'Values are typical and may vary by grade. Final specifications are confirmed in the technical data sheet for each SKU.'}{' '}
+            *Warranty terms vary by product grade and region.
           </p>
+          {sheet && <DataSheetTable sheet={sheet} />}
         </div>
       </section>
 

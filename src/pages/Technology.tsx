@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import LayerStack from '../components/LayerStack';
 import CompareSlider from '../components/CompareSlider';
+import { KeyMetrics } from '../components/DataSheet';
 import Img from '../components/Img';
 import Icon from '../components/Icon';
 import { CtaBand, PageHero, SectionHead } from '../components/ui';
@@ -113,7 +114,9 @@ export default function Technology() {
         </div>
       </section>
 
-      <section className="section bg-white">
+      <KeyMetrics />
+
+      <section className="section">
         <div className="container split-grid">
           <figure className="rounded-media" data-reveal="clip">
             <Img name="ppf-rnd-laboratory" alt="WIKA PPF R&D laboratory testing paint protection film materials" sizes="(max-width: 900px) 92vw, 600px" />

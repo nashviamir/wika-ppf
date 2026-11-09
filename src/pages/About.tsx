@@ -124,7 +124,7 @@ export default function About() {
       <section className="section bg-white">
         <div className="container split-grid">
           <figure className="rounded-media" data-reveal="clip">
-            <Img name="ppf-slitting-rewinding-line" alt="WIKA PPF slitting and rewinding production" sizes="(max-width: 900px) 92vw, 600px" />
+            <Img name="ppf-cleanroom-coating-hall" alt="WIKA PPF clean-room coating hall" sizes="(max-width: 900px) 92vw, 600px" />
           </figure>
           <div>
             <SectionHead

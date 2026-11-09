@@ -186,8 +186,8 @@ const staticPages: PageMeta[] = [
       'Partner with WIKA PPF: wholesale paint protection film for distributors, installation studios, detailing centers and dealers. Reliable supply, training and support.',
     keywords: [...BRAND_KEYWORDS, 'PPF wholesale', 'PPF distributor', 'PPF supplier', 'paint protection film dealer', 'become PPF distributor'],
     pageType: 'WebPage',
-    og: { image: 'ppf-warehouse-logistics', headline: 'Let’s grow together.', kicker: 'Distributors & Partners' },
-    imageAlt: 'Warehouse stocked with WIKA PPF rolls ready for wholesale distribution',
+    og: { image: 'ppf-cleanroom-packing', headline: 'Let’s grow together.', kicker: 'Distributors & Partners' },
+    imageAlt: 'WIKA PPF rolls packed and labelled for wholesale distribution',
     breadcrumbs: [{ name: 'Partners', path: '/partners/' }],
   },
   {

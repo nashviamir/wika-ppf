@@ -42,7 +42,7 @@ export default function Manufacturing() {
         <div className="container">
           <SectionHead
             eyebrow="Our process"
-            title="Seven steps. Zero shortcuts."
+            title="Six steps. Zero shortcuts."
             text="Scroll through how a WIKA paint protection film roll is made — from verified raw materials to the moment it ships."
           />
           <ProcessRail />
@@ -80,7 +80,7 @@ export default function Manufacturing() {
               ['ppf-unwinding-station', 'Operators loading a master roll on the unwinding station'],
               ['tpu-film-production', 'TPU film running through the lamination line'],
               ['ppf-quality-control-lab', 'Film thickness and clarity inspection'],
-              ['ppf-warehouse-logistics', 'Finished rolls in the warehouse ready for dispatch'],
+              ['ppf-cleanroom-packing', 'Finished rolls packed and batch-labelled in clean conditions'],
             ].map(([n, alt], i) => (
               <figure key={n} data-reveal style={d((i % 3) * 90)}>
                 <Img name={n} alt={alt} sizes="(max-width: 680px) 92vw, (max-width: 1024px) 46vw, 400px" />

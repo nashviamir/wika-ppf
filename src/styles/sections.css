@@ -2217,3 +2217,186 @@
     aspect-ratio: 1080 / 864;
   }
 }
+
+/* Protective film layer (top of the stack) */
+.layer-protective .layer-face {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.75), rgba(220, 235, 250, 0.45));
+  border: 1.5px dashed rgba(47, 127, 176, 0.75);
+}
+.layers {
+  --gap: 26px;
+}
+
+/* ═══════════════════ Tested performance metrics ═══════════════════ */
+.metric-links {
+  display: grid;
+  gap: 8px;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(12px, 1.6vw, 18px);
+}
+.metric {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+  padding: clamp(20px, 2.4vw, 28px);
+  border-radius: var(--r-lg);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  transition:
+    border-color 0.3s,
+    box-shadow 0.4s var(--ease),
+    opacity 0.9s var(--ease),
+    transform 0.9s var(--ease);
+}
+.metric:hover {
+  border-color: rgba(47, 107, 255, 0.3);
+  box-shadow: var(--shadow);
+}
+.metric b {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--blue);
+}
+.metric span {
+  font-weight: 600;
+  color: var(--ink);
+}
+.metric small {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+@media (max-width: 900px) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ═══════════════════ Surface technology cards ═══════════════════ */
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  transition:
+    box-shadow 0.5s var(--ease),
+    opacity 0.9s var(--ease),
+    transform 0.9s var(--ease);
+}
+.tech-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+.tc-media {
+  position: relative;
+  aspect-ratio: 16 / 8;
+}
+.tc-media .img {
+  position: absolute;
+  inset: 0;
+}
+.tc-icon {
+  position: absolute;
+  left: 22px;
+  bottom: -26px;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  color: #fff;
+  box-shadow: var(--shadow-lg);
+  border: 3px solid var(--surface);
+}
+.tech-card.warm .tc-icon {
+  background: linear-gradient(135deg, #ff7a3d, #e8202e);
+}
+.tech-card.cool .tc-icon {
+  background: var(--grad);
+}
+.tc-icon svg {
+  width: 24px;
+  height: 24px;
+}
+.tc-body {
+  display: grid;
+  gap: 14px;
+  padding: 44px clamp(22px, 3vw, 34px) clamp(24px, 3vw, 34px);
+}
+.tc-body > p {
+  color: var(--muted);
+}
+
+/* ═══════════════════ Data sheet table ═══════════════════ */
+.datasheet {
+  margin-top: clamp(32px, 4vw, 48px);
+  display: grid;
+  gap: 16px;
+}
+.ds-head p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.ds-table {
+  min-width: 720px;
+  font-size: 0.9rem;
+}
+.ds-table th,
+.ds-table td {
+  padding: 12px 18px;
+}
+.ds-table tbody th {
+  white-space: normal;
+}
+.ds-group th {
+  background: var(--bg-2);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue) !important;
+}
+.ds-val {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.ds-unit,
+.ds-method,
+.ds-note {
+  color: var(--muted);
+}
+.ds-method {
+  white-space: nowrap;
+}
+.ds-notes {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.84rem;
+  color: var(--faint);
+  display: grid;
+  gap: 4px;
+}
+.ds-swipe {
+  display: none;
+}
+@media (max-width: 760px) {
+  .ds-head .ds-swipe {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--blue);
+  }
+}

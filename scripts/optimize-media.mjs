@@ -21,10 +21,8 @@ const media = [
   { file: 'Gemini_Generated_Image_a03ojya03ojya03o.jpg', slug: 'ppf-cleanroom-packing', widths: W },
   { file: 'Gemini_Generated_Image_ay59hsay59hsay59.jpg', slug: 'ppf-rnd-laboratory', widths: W },
   { file: 'Gemini_Generated_Image_c13ogoc13ogoc13o.jpg', slug: 'ppf-quality-control-lab', widths: W },
-  { file: 'Gemini_Generated_Image_j349qj349qj349qj.jpg', slug: 'ppf-slitting-rewinding-line', widths: W },
   { file: 'Gemini_Generated_Image_tlzzm8tlzzm8tlzz.jpg', slug: 'ppf-coating-production-line', widths: W },
   { file: 'Gemini_Generated_Image_uhwbuyuhwbuyuhwb.jpg', slug: 'tpu-film-production', widths: W },
-  { file: 'Gemini_Generated_Image_vxd8jnvxd8jnvxd8.jpg', slug: 'ppf-warehouse-logistics', widths: W },
   // Real car photography (Unsplash License — see data/stock/CREDITS.md)
   { file: 'stock/hero-white-car-front.jpg', slug: 'white-sports-car-front-ppf', widths: [640, 1100, 1600] },
   { file: 'stock/gloss-yellow-bodywork.jpg', slug: 'gloss-yellow-car-bodywork', crop: { left: 0, top: 500, width: 2000, height: 2000 }, widths: [640, 1100] },

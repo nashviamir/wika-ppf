@@ -5,6 +5,7 @@ import CompareSlider from '../components/CompareSlider';
 import LayerStack from '../components/LayerStack';
 import Img from '../components/Img';
 import CeoMessage from '../components/CeoMessage';
+import { KeyMetrics, SurfaceTech } from '../components/DataSheet';
 import Icon from '../components/Icon';
 import { Ambient, Counter, CtaBand, Faq, Marquee, SectionHead } from '../components/ui';
 import { benefits, faqs, marqueeWords, partnerTypes, products, stats } from '../data/content';
@@ -152,8 +153,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ───────── SURFACE TECHNOLOGY ───────── */}
+      <SurfaceTech />
+
       {/* ───────── BENEFITS ───────── */}
-      <section className="section">
+      <section className="section bg-white">
         <div className="container">
           <SectionHead
             center
@@ -176,14 +180,14 @@ export default function Home() {
       </section>
 
       {/* ───────── LAYERS ───────── */}
-      <section className="section bg-white">
+      <section className="section">
         <div className="container">
           <SectionHead
             split
             eyebrow="Engineered in layers"
             title={
               <>
-                What’s inside <span className="text-grad">200 microns</span> of protection.
+                What’s inside <span className="text-grad">232 microns</span> of protection.
               </>
             }
             text="PPF performance depends on the complete construction — not a single material name. Select a layer to see its role."
@@ -208,6 +212,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ───────── TESTED PERFORMANCE ───────── */}
+      <KeyMetrics />
 
       {/* ───────── MANUFACTURING ───────── */}
       <section className="section">
@@ -236,12 +243,12 @@ export default function Home() {
               <figcaption>R&D laboratory</figcaption>
             </figure>
             <figure className="bento-d" data-reveal style={d(100)}>
-              <Img name="ppf-cleanroom-packing" alt="Clean-room packing of WIKA PPF rolls" sizes="(max-width: 900px) 92vw, 620px" />
-              <figcaption>Clean-room packing</figcaption>
+              <Img name="ppf-cleanroom-coating-hall" alt="Clean-room paint protection film coating hall" sizes="(max-width: 900px) 92vw, 620px" />
+              <figcaption>Clean-room coating hall</figcaption>
             </figure>
             <figure className="bento-e" data-reveal style={d(200)}>
-              <Img name="ppf-slitting-rewinding-line" alt="TPU film slitting and rewinding machine" sizes="(max-width: 900px) 92vw, 620px" />
-              <figcaption>Slitting & rewinding</figcaption>
+              <Img name="ppf-unwinding-station" alt="Operators loading a TPU master roll on the unwinding station" sizes="(max-width: 900px) 92vw, 620px" />
+              <figcaption>Master-roll unwinding</figcaption>
             </figure>
           </div>
         </div>
@@ -251,7 +258,7 @@ export default function Home() {
       <section className="section partners-teaser">
         <div className="container split-grid">
           <div className="pt-media" data-reveal="left">
-            <Img name="ppf-warehouse-logistics" alt="WIKA PPF warehouse stocked with paint protection film rolls ready for distributors" sizes="(max-width: 900px) 92vw, 600px" />
+            <Img name="ppf-cleanroom-packing" alt="WIKA PPF rolls being packed and labelled for distributors" sizes="(max-width: 900px) 92vw, 600px" />
             <div className="pt-float">
               <b>Wholesale ready</b>
               <span>Single rolls to full pallets</span>

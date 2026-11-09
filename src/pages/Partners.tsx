@@ -22,7 +22,7 @@ export default function Partners() {
         crumbs={[{ name: 'Partners' }]}
         aside={
           <div className="hero-media">
-            <Img name="ppf-warehouse-logistics" alt="Warehouse stocked with WIKA PPF rolls for wholesale distribution" sizes="(max-width: 900px) 92vw, 560px" priority />
+            <Img name="ppf-cleanroom-packing" alt="WIKA PPF rolls packed and labelled for wholesale distribution" sizes="(max-width: 900px) 92vw, 560px" priority />
           </div>
         }
       >
