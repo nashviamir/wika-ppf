@@ -2280,61 +2280,49 @@
   }
 }
 
-/* ═══════════════════ Surface technology cards ═══════════════════ */
-.tech-card {
+/* ═══════════════════ See-the-difference detail points ═══════════════════ */
+.diff-points {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+.diff-point {
   display: flex;
-  flex-direction: column;
-  border-radius: var(--r-xl);
-  overflow: hidden;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px 18px;
+  border-radius: var(--r);
   background: var(--surface);
   border: 1px solid var(--line);
-  box-shadow: var(--shadow);
   transition:
-    box-shadow 0.5s var(--ease),
     opacity 0.9s var(--ease),
     transform 0.9s var(--ease);
 }
-.tech-card:hover {
-  box-shadow: var(--shadow-lg);
+.diff-point p {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--muted);
 }
-.tc-media {
-  position: relative;
-  aspect-ratio: 16 / 8;
+.diff-point b {
+  color: var(--ink);
+  font-weight: 650;
 }
-.tc-media .img {
-  position: absolute;
-  inset: 0;
-}
-.tc-icon {
-  position: absolute;
-  left: 22px;
-  bottom: -26px;
+.dp-icon {
+  flex: none;
   display: grid;
   place-items: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
   color: #fff;
-  box-shadow: var(--shadow-lg);
-  border: 3px solid var(--surface);
-}
-.tech-card.warm .tc-icon {
-  background: linear-gradient(135deg, #ff7a3d, #e8202e);
-}
-.tech-card.cool .tc-icon {
   background: var(--grad);
 }
-.tc-icon svg {
-  width: 24px;
-  height: 24px;
+.diff-point.warm .dp-icon {
+  background: linear-gradient(135deg, #ff7a3d, #e8202e);
 }
-.tc-body {
-  display: grid;
-  gap: 14px;
-  padding: 44px clamp(22px, 3vw, 34px) clamp(24px, 3vw, 34px);
-}
-.tc-body > p {
-  color: var(--muted);
+.dp-icon svg {
+  width: 19px;
+  height: 19px;
 }
 
 /* ═══════════════════ Data sheet table ═══════════════════ */

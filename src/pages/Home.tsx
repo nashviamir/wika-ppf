@@ -1,11 +1,11 @@
 import type { CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ArrowUpRight, Check } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Check, Droplets, Flame } from 'lucide-react';
 import CompareSlider from '../components/CompareSlider';
 import LayerStack from '../components/LayerStack';
 import Img from '../components/Img';
 import CeoMessage from '../components/CeoMessage';
-import { KeyMetrics, SurfaceTech } from '../components/DataSheet';
+import { KeyMetrics } from '../components/DataSheet';
 import Icon from '../components/Icon';
 import { Ambient, Counter, CtaBand, Faq, Marquee, SectionHead } from '../components/ui';
 import { benefits, faqs, marqueeWords, partnerTypes, products, stats } from '../data/content';
@@ -101,6 +101,27 @@ export default function Home() {
                 <Check /> Keeps paint glossy, deep and UV-protected
               </li>
             </ul>
+            <div className="diff-points">
+              <div className="diff-point warm" data-reveal>
+                <span className="dp-icon">
+                  <Flame aria-hidden="true" />
+                </span>
+                <p>
+                  <b>Scratch heat repair capability:</b> High-quality PPF surfaces usually have an elastic memory repair coating (heat
+                  activated), which can restore the smoothness of sun marks and small scratches caused by daily car washing or minor
+                  friction under sunlight, warm water or hot air.
+                </p>
+              </div>
+              <div className="diff-point" data-reveal>
+                <span className="dp-icon">
+                  <Droplets aria-hidden="true" />
+                </span>
+                <p>
+                  <b>Hydrophobic self-cleaning properties:</b> Some high-end PPF surfaces have excellent hydrophobic coatings, making it
+                  difficult for water droplets and dirt to adhere and easy to roll off, making daily car washing and cleaning easier.
+                </p>
+              </div>
+            </div>
           </div>
           <div data-reveal="right">
             <CompareSlider />
@@ -152,9 +173,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* ───────── SURFACE TECHNOLOGY ───────── */}
-      <SurfaceTech />
 
       {/* ───────── BENEFITS ───────── */}
       <section className="section bg-white">
