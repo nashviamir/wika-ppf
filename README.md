@@ -39,7 +39,7 @@ Every page has its own 1200×630 share card in `public/og/`. Each card shows the
 
 ## Deployment
 
-The site is live at https://nashviamir.github.io/wika-ppf/. Every push to `main` builds and deploys it automatically (`.github/workflows/deploy.yml`).
+The site is live at https://www.wikappf.com (DNS on Cloudflare, records in "DNS only" mode, hosted on GitHub Pages). Every push to `main` builds and deploys it automatically (`.github/workflows/deploy.yml`).
 
 ### Moving to a custom domain
 

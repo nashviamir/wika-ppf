@@ -26,11 +26,9 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          # Served at https://nashviamir.github.io/wika-ppf/ for now.
-          # When the custom domain is ready: set BASE_PATH to "/", VITE_SITE_URL to
-          # "https://www.your-domain.com" and add public/CNAME (see README).
-          BASE_PATH: /wika-ppf/
-          VITE_SITE_URL: https://nashviamir.github.io/wika-ppf
+          # Custom domain (Cloudflare DNS → GitHub Pages). public/CNAME must match.
+          BASE_PATH: /
+          VITE_SITE_URL: https://www.wikappf.com
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

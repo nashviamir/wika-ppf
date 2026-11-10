@@ -11,8 +11,8 @@ export const site = {
   shortName: 'WIKA',
   tagline: 'Protecting Excellence. Driving Innovation.',
   // Full public URL of the site, no trailing slash. Set at build time with VITE_SITE_URL
-  // (see .github/workflows/deploy.yml); the fallback is the current GitHub Pages address.
-  url: (import.meta.env.VITE_SITE_URL as string | undefined) || 'https://nashviamir.github.io/wika-ppf',
+  // (see .github/workflows/deploy.yml); the fallback is the live custom domain.
+  url: (import.meta.env.VITE_SITE_URL as string | undefined) || 'https://www.wikappf.com',
   locale: 'en_US',
   themeColor: '#1438D6',
 
